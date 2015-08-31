@@ -1,0 +1,24 @@
+{
+  "name": "html",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/websbuddha/html.git"
+  },
+  "author": "karthikeyan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/websbuddha/html/issues"
+  },
+  "homepage": "https://github.com/websbuddha/html#readme",
+  "dependencies": {
+    "body-parser": "^1.13.3",
+    "express": "^4.13.3",
+    "nodemailer": "^1.4.0"
+  }
+}

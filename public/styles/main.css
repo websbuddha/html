@@ -1,0 +1,206 @@
+/*-----------------home page syling starts --------------------*/
+.section1 .bw-nav{
+	position: fixed;
+	z-index: 9;
+	width: 100%;
+}
+.section1 .bw-nav .bw-logo img{
+	width: 115px;
+	height: 62px;
+}
+.section1 .bw-nav nav{
+	float: right;
+	text-align: center;
+}
+.section1 .bw-nav nav ul li{
+	list-style: none;
+	float: left;
+	margin: 20px 50px 20px 50px;
+}
+.section1 .bw-nav nav ul li a h5{
+	margin-top:15px; 
+}
+.section1 .bw-nav nav ul li a,.section1 .bw-nav nav ul li a:hover, .section1 .bw-nav nav ul li a:focus{
+	text-decoration: none;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	color: white;
+}
+.section1 .slide-viewer.taller { 
+	height: 662px; 
+	margin-top: 0px; 
+}
+.section1 .full-width-heading{
+	background: transparent;
+	color: white;
+	opacity: 1;
+	top: 30%;
+	left: 15%;
+	right: 0;
+	bottom: 0;
+	opacity: none;
+	width: 741px;
+	text-align: right;
+	position: relative;
+}
+.section1 .full-width-heading .slide_head1{
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+}
+.section1 .full-width-heading .slide_head2{
+	font-family: 'Tangerine', sans-serif;
+	font-weight: 700;
+}
+.section1 .full-width-heading input[type=button]:nth-child(1){
+	display: none;
+}
+.section1 .full-width-heading input[type=button]{
+	background: transparent;
+	border:1px solid white;
+	outline: none;
+	margin: 30px 0 0 0;
+	padding: 10px;
+	width: 280px;
+	font-family: 'Muli',sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+}
+/*------------- Section2 styling ---------------*/
+.section2{
+	background: #4c4c4c;
+}
+.section2 .bw-process{
+	color: white;
+	margin: 0 120px 0 120px;
+	text-align: center;
+	padding-bottom: 150px;
+}
+.section2 .bw-process h1{
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+}
+.section2 .bw-process p{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	text-align: center;
+	width: 85%;
+	margin: 15px auto;
+}
+.section2 .center-spacing{
+	margin: 45px;
+}
+.section2 .spacing{
+	position: relative;
+}
+.section2 .outer-circle{
+	width: 230px;
+	height: 230px;
+	border-radius: 50%;
+	border:4px solid white;
+	text-align: center;
+}
+.section2 .inner-circle{
+	margin: 6px;
+	width: 210px;
+	height: 210px;
+	border-radius: 50%;
+	border:4px solid white;
+}
+.section2 .outer-circle .inner-circle img{
+	margin: 45px auto;
+	width: auto;
+}
+.section2 .sideline_left,.section2 .sideline_right{
+	width: 100%;
+	border-top:4px solid white;
+}
+.section2 .sideline_left{
+	margin-top: 115px;
+}
+.section2 .sideline_right{
+	margin-top: 115px;
+}
+.section2 .vertical_line{
+	position: absolute;
+	top:95px; 
+	width: 2px;
+    height: 381px;
+	border-right:4px solid white;
+	right: 0;
+	left: 1px;
+}
+.section2 .bottom_line{
+	height: 153px;
+}
+.section2 .left-spacing{
+	position: relative;
+}
+.section2 .left-spacing h3, .section2 .right-spacing h3{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	position: absolute;
+	right: 0;
+	left: 200px;
+	top: 45px;
+}
+.section2 .right-spacing h3{
+	left: 0;
+	right: 200px;
+}
+.section2 .right-spacing{
+	margin: 150px 0 -75px 0;
+	position: relative;
+}
+.hide-class{
+	display: none;
+}
+/*------------------------- Section3 styling --------------------*/
+.section3{
+	background: #131313;
+}
+.section3 h3{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	font-size: 22px;
+	margin:45px 0 10px 0; 
+	text-align: center;
+	color: white;
+}
+.section3 .contact{
+	margin: 0 120px 0 120px; 
+}
+.section3 .contact input[type=text], .section3 .contact input[type=email], .section3 .contact textarea{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+	background-color: #131313;
+	border:2px solid white;
+	padding:10px;
+	margin: 10px;
+	color: #a7a7a7;
+}
+.section3 .contact textarea{
+	height: 114px;
+}
+.section3 .button-spacing{
+	margin: 10px;
+	text-align: right;
+}
+.section3 .contact input[type=submit]{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+	background:#c0bebe;
+	border:none;
+	outline: none;
+	width: 200px;
+	height: 50px;
+}
+.section3 .copyrights p, .section3 .copyrights a{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 8px;
+	text-decoration: none;
+	color: white;
+	text-align: center;
+}
