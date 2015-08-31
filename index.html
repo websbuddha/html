@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Buddha</title>
+	<meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Online fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,900,400italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Tangerine:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900' rel='stylesheet' type='text/css'>
+    <!-- Css files -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="bower_components/angular-material/angular-material.css" />
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="styles/slideviewer.css">
+</head>
+<body ng-app="buddhaApp" ng-controller="mainCtrl">
+<!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <!-- Add your site or application content here -->
+    <section class="section1" id="section-1">
+    	<div class="bw-nav" layout="row" flex="100">
+    		<div class="bw-logo" layout="column" flex="30" layout-align="center center">
+    			<img src="images/logo.png" alt="">
+    		</div>
+    		<div layout="row" flex="70" layout-align="center center">
+		    	<nav>
+		    		<ul>
+		    			<li>
+		    				<a href="#section-1" du-smooth-scroll du-scrollspy>
+		    					<img src="images/home.png" alt="">
+		    					<h5>HOME</h5>
+		    				</a>
+		    			</li>
+		    			<li>
+		    				<a href="#section-2" du-smooth-scroll du-scrollspy>
+		    					<img src="images/services.png" alt="">
+		    					<h5>SERVICES</h5>
+		    				</a>
+		    			</li>
+		    			<li>
+		    				<a href="#section-3" du-smooth-scroll du-scrollspy>
+		    					<img src="images/contact.png" alt="">
+		    					<h5>CONTACT</h5>
+		    				</a>
+		    			</li>
+		    		</ul>
+		    	</nav>
+	    	</div>
+    	</div>
+    	<div slide-source="slide in slides" background-source="imgUrl" class="slide-viewer taller" slide-transition="fade" auto-advance="5000" control-button-class="icon-ctrl-btn icon-sm-ctrl" control-pin-class="icon-ctrl-pin icon-sm-ctrl" pin-container-class="pin-container" clip-width="134" use-keyboard="true">
+     		<div class="full-width-heading" layout-align="center center" data-sr="wait 0.25s, ease-in-out 100px">
+     			<h1 class="slide_head1" ng-bind="slide.title1"></h1>
+     			<h1 class="slide_head2" ng-bind="slide.title2"></h1>
+     			<input type="button" ng-class="slide.class" ng-href="{{slide.href}}" ng-value="slide.value" du-smooth-scroll du-scrollspy>
+     		</div>
+		</div>
+    </section>
+    <section class="section2" id="section-2">
+        <div class="bw-process" layout="column" flex="100">
+            <h1 data-sr="wait 0.25s, ease-in-out 100px">PROCESS</h1>
+            <p data-sr="wait 0.25s, ease-in-out 100px">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <div layout="column" flex="100" class="center-spacing">
+                <div layout="row" flex="100" class="spacing">
+                    <div data-sr="wait 0.25s, ease-in-out 100px" layout="row" flex="50" class="left-spacing">
+                        <div class="outer-circle">
+                            <div class="inner-circle">
+                                <img src="images/axure.png" alt="">
+                            </div>
+                        </div>
+                        <hr class="sideline_left" />
+                        <h3>WIREFRAMEING</h3>
+                    </div>
+                        <hr class="vertical_line" />
+                    <div  data-sr="wait 0.25s, ease-in-out 100px"layout="row" flex="50" class="right-spacing">
+                        <h3>APP DESIGN</h3>
+                        <hr class="sideline_right" />
+                        <div class="outer-circle">
+                            <div class="inner-circle">
+                                <img src="images/app.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div layout="row" flex="100" class="spacing">
+                    <div data-sr="wait 0.25s, ease-in-out 100px" layout="row" flex="50" class="left-spacing">
+                        <div class="outer-circle">
+                            <div class="inner-circle">
+                                <img src="images/app_dev.png" alt="">
+                            </div>
+                        </div>
+                        <hr class="sideline_left" />
+                        <h3>APP DEVELOPMENT</h3>
+                    </div>
+                        <hr class="vertical_line" />
+                    <div data-sr="wait 0.25s, ease-in-out 100px" layout="row" flex="50" class="right-spacing">
+                        <h3>STRATEGY</h3>
+                        <hr class="sideline_right" />
+                        <div class="outer-circle">
+                            <div class="inner-circle">
+                                <img src="images/strategy.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div layout="row" flex="100" class="spacing">
+                    <div data-sr="wait 0.25s, ease-in-out 100px" layout="row" flex="50" class="left-spacing">
+                        <div class="outer-circle">
+                            <div class="inner-circle">
+                                <img src="images/ui.png" alt="">
+                            </div>
+                        </div>
+                        <hr class="sideline_left" />
+                        <h3>UI/UX</h3>
+                    </div>
+                        <hr class="vertical_line" />
+                    <div data-sr="wait 0.25s, ease-in-out 100px" layout="row" flex="50" class="right-spacing">
+                        <h3>FRONTEND</h3>
+                        <hr class="sideline_right" />
+                        <div class="outer-circle">
+                            <div class="inner-circle">
+                                <img src="images/frontend.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div layout="row" flex="100" class="spacing">
+                    <div data-sr="wait 0.25s, ease-in-out 100px" layout="row" flex="50" class="left-spacing">
+                        <div class="outer-circle">
+                            <div class="inner-circle">
+                                <img src="images/db.png" alt="">
+                            </div>
+                        </div>
+                        <hr class="sideline_left" />
+                        <h3>DATABASES</h3>
+                    </div>
+                        <hr class="vertical_line" />
+                    <div data-sr="wait 0.25s, ease-in-out 100px" layout="row" flex="50" class="right-spacing">
+                        <h3>BACKEND</h3>
+                        <hr class="sideline_right" />
+                        <div class="outer-circle">
+                            <div class="inner-circle">
+                                <img src="images/backend.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div layout="row" flex="100" class="spacing">
+                    <div data-sr="wait 0.25s, ease-in-out 100px" layout="row" flex="50" class="left-spacing">
+                        <div class="outer-circle">
+                            <div class="inner-circle">
+                                <img src="images/api.png" alt="">
+                            </div>
+                        </div>
+                        <hr class="sideline_left" />
+                        <h3>API</h3>
+                    </div>
+                        <hr class="vertical_line bottom_line" />
+                    <div data-sr="wait 0.25s, ease-in-out 100px" layout="row" flex="50" class="right-spacing">
+                        <h3>LAUNCH SUPPORT</h3>
+                        <hr class="sideline_right" />
+                        <div class="outer-circle">
+                            <div class="inner-circle">
+                                <img src="images/host.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section3" id="section-3">
+        <div layout="column" flex="100" class="contact">
+        <h3>CONTACT US</h3>
+            <form name="contact-form">
+                <div layout="row" flex="100" layout-align="center">
+                    <div layout="column" flex="40" layout-padding>
+                        <input  type="text" placeholder="NAME">
+                        <input type="email" placeholder="EMAIL ADDRESS">
+                    </div>
+                    <div layout="column" flex="60" layout-padding>
+                        <textarea placeholder="MESSAGE"></textarea>
+                        <div class="button-spacing">
+                        <input type="submit" value="SEND"></div>
+                    </div>
+                </div>                
+            </form>
+            <div class="copyrights" layout="column" flex="100" layout-padding>
+                <p>Copyrights@<a href="#">www.buddhawebs.com</a></p>
+            </div>
+        </div>
+    </section>
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+    <script>
+    ! function(A, n, g, u, l, a, r) {
+        A.GoogleAnalyticsObject = l, A[l] = A[l] || function() {
+                (A[l].q = A[l].q || []).push(arguments)
+            }, A[l].l = +new Date, a = n.createElement(g),
+            r = n.getElementsByTagName(g)[0], a.src = u, r.parentNode.insertBefore(a, r)
+    }(window, document, 'script', 'http://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-XXXXX-X');
+    ga('send', 'pageview');
+    </script>
+    <!-- Bower js files -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-aria/angular-aria.js"></script>
+    <script src="bower_components/angular-material/angular-material.min.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.min.js"></script>
+    <!-- Page scroll animation plugin -->
+    <script src="bower_components/scrollReveal.js/scrollReveal.js"></script>
+    <!-- page smooth scroll plugin -->
+    <script src="bower_components/angular-scroll/angular-scroll.min.js"></script>
+    <!-- slider plugin -->
+    <script src="js/slideviewer.js"></script>
+    <script src="bower_components/gsap/src/minified/TweenMax.min.js"></script>
+    <!-- main js files -->
+    <script src="js/app.js"></script>
+</body>
+</html>
